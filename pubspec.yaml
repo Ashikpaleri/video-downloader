@@ -1,0 +1,61 @@
+name: video_downloder
+description: A new Flutter project.
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flick_video_player: ^0.5.0
+  video_player: ^2.5.3
+  flutter_windowmanager: ^0.2.0
+  prevent_screen_recording: ^0.0.2
+#  downloads_path_provider_28: ^0.1.2
+  permission_handler: ^8.3.0
+  dio: ^4.0.4
+  path_provider: ^2.0.13
+  open_file: ^3.2.1
+  firebase_core: ^2.7.0
+  firebase_auth: ^4.2.9
+  fluttertoast: ^8.0.8
+  equatable:
+  flutter_bloc: ^7.0.1
+  share: ^2.0.4
+  shared_preferences: ^2.0.13
+  objectid: ^2.1.0
+  device_info: ^2.0.3
+  carousel_slider: ^4.1.1
+
+#  cloud_firestore: ^4.4.3
+#  file_picker: ^5.2.5
+
+
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - lib/base_module/presentation/core/assets/images/
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: lib/base_module/presentation/core/assets/fonts/Poppins-Bold.ttf
+        - asset: lib/base_module/presentation/core/assets/fonts/Poppins-Light.ttf
+        - asset: lib/base_module/presentation/core/assets/fonts/Poppins-Medium.ttf
+        - asset: lib/base_module/presentation/core/assets/fonts/Poppins-Regular.ttf

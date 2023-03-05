@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "787235365188",
+    "project_id": "video-downloder-91214",
+    "storage_bucket": "video-downloder-91214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787235365188:android:e483386de8a4dee3e6f711",
+        "android_client_info": {
+          "package_name": "com.example.video_downloder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787235365188-bq5lrsss5md4hmq011cp0brf0gj9r7cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.video_downloder",
+            "certificate_hash": "fe58d2996637616d5f828afcc023d13d8a6953aa"
+          }
+        },
+        {
+          "client_id": "787235365188-lpi873oo07gjmb22huq33vpevg4l78ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTWDVLQ2YxQ6u6LFn4DxAIKNbuWhL3Lw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787235365188-lpi873oo07gjmb22huq33vpevg4l78ll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
