@@ -10,12 +10,9 @@ import 'package:flutter_windowmanager/flutter_windowmanager.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:prevent_screen_recording/prevent_screen_recording.dart';
-import 'package:video_downloder/base_module/domain/entity/app_theme_singleton.dart';
 import 'package:video_downloder/base_module/presentation/core/values/app_assets.dart';
 import 'package:video_downloder/base_module/presentation/core/values/app_constants.dart';
 import 'package:video_downloder/home_module/presentation/components/arrow_button.dart';
-import 'package:video_downloder/home_module/presentation/feature/demo/screen/test_button.dart';
-import 'package:video_downloder/home_module/presentation/feature/demo/screen/theme_swicher.dart';
 import 'package:video_downloder/user_module/presentation/feature/demo/screen/login_screen.dart';
 import 'package:video_player/video_player.dart';
 

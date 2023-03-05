@@ -1,10 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_windowmanager/flutter_windowmanager.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:prevent_screen_recording/prevent_screen_recording.dart';
 import 'package:video_downloder/base_module/presentation/components/custom_text_field.dart';
 
 import 'package:video_downloder/home_module/presentation/feature/demo/screen/home_screen.dart';
-import 'package:video_downloder/home_module/presentation/feature/demo/screen/test_button.dart';
+import 'package:video_downloder/home_module/presentation/feature/demo/screen/theme_ button.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -20,9 +22,36 @@ class _LoginScreenState extends State<LoginScreen> {
   bool otpVisibility = false;
   User? user;
   String verificationID = "";
-
+  late PreventScreenRecording? screenRecordingCallBack;
   // final _db = FirebaseFirestore.instance;
   var verificationId = '';
+
+  void preventScreenShot()async{
+    await FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
+  }
+
+
+  void preventScreenRecording() async{
+    await initScreenRecordingCallback();
+  }
+
+  Future<void> initScreenRecordingCallback() async{
+    screenRecordingCallBack = PreventScreenRecording();
+
+    screenRecordingCallBack!.addListner(() {
+      print("Updating status for recording...");
+
+      setState(() {
+        // text = "Screenrecording callback received";
+      });
+    });
+  }
+  void initState() {
+
+    preventScreenShot();
+    preventScreenRecording();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               
 
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               ThemeSwitcherButtons(
 
               ),
@@ -100,6 +129,8 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
+
+
 
   void loginWithPhone() async {
     auth.verifyPhoneNumber(
